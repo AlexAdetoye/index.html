@@ -1,8 +1,10 @@
 # this is my base image
-FROM node:12.18.1
+FROM node:18.13.0
 
 # Install python and pip
-RUN apk add --update py2-pip
+# RUN apk add --update py2-pip
+RUN apt install python3-pip
+
 
 # install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
