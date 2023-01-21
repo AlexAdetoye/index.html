@@ -2,7 +2,7 @@
 FROM node:18.13.0
 
 # Install python and pip
-RUN apt update && apt install python-pip
+RUN apt update && apt install python3-pip
 # RUN apk add --update py2-pip
 # RUN apt install python3-pip
 
