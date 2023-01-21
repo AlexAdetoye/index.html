@@ -1,5 +1,5 @@
 # this is my base image
-FROM 18.13.0
+FROM node:18.13.0 
 
 # Install python and pip
 RUN apk add --update py2-pip
@@ -18,3 +18,8 @@ EXPOSE 5000
 
 # run the application
 CMD ["python", "/usr/src/app/app.py"]
+
+
+
+
+
