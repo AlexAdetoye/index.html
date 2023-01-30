@@ -5,6 +5,7 @@ FROM node:18.13.0
 RUN apt-get update && apt-get install python3 -y
 
 RUN which python3
+RUN which pip
 
 # # install Python modules needed by the Python app
 # COPY requirements.txt /usr/src/app/
