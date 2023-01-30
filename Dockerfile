@@ -2,7 +2,7 @@
 FROM node:18.13.0
 
 # Install python and pip
-RUN apt-get update && apt install python3-pip
+RUN apt-get update && apt install python3-pip -y
 
 RUN which python3 && which pip3
 RUN which python && which pip
