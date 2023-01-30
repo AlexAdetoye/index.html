@@ -2,10 +2,10 @@
 FROM node:18.13.0
 
 # Install python and pip
-RUN apt-get update && apt-get install python3 -y
+RUN apt-get update && sudo apt install python3-pip
 
-RUN which python3
-RUN which pip3
+RUN which python3 && which pip3
+RUN which python && which pip
 
 # # install Python modules needed by the Python app
 # COPY requirements.txt /usr/src/app/
